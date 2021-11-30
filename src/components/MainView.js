@@ -1,9 +1,7 @@
 import React from "react";
-import FooterView from "./FooterView";
-import Headerview from "./HeaderView";
-import Homemethod from "./Home";
-import Aboutmethod from "./About";
-import Contactmethod from "./Contact";
+import Homemethod from "./HomeView";
+import Aboutmethod from "./AboutView";
+import Contactmethod from "./ContactView";
 
 import {Switch, Route, Redirect, withRouter} from 'react-router-dom'
 import NavigatorTab from "./NavigationComponent";
@@ -13,22 +11,13 @@ function Mainview()
 {
     return(
         <React.Fragment>
-        <Headerview/>
-
-        <NavigatorTab/>
-
-
-        <Switch>
-            <Route path='/Home' components={Homemethod}/>
-            <Route path='/About' components={Aboutmethod}/>
-            <Route path='/Contact' components={Contactmethod}/>
-            <Redirect to='/Home'/>
-        </Switch>
-
-
-        <FooterView/>
-
-        
+            <NavigatorTab/>
+           <Switch>
+               <Route path='/homepage' component={Homemethod}/>
+               <Route path='/aboutpage' component={Aboutmethod}/>
+               <Route path='/contactpage' component={Contactmethod}/>
+               <Redirect to='homepage'/>
+           </Switch>
         </React.Fragment>
         
     )

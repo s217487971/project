@@ -3,9 +3,7 @@ import React from "react";
 function Aboutmethod()
 {
     return(
-       <React.Fragment>
-           
-       </React.Fragment>
+      <div>About Data</div>
     )
 }
 

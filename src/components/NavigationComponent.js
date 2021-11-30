@@ -14,13 +14,13 @@ function NavigatorTab()
             <div class="collapse navbar-collapse" id="navbarText">
             <ul class="navbar-nav me-auto mb-2 mb-lg-0">
             <li class="nav-item">
-            <Link class="nav-link active" aria-current="page" to='/Home'>Home</Link>
+            <Link class="nav-link" to='/homepage'><h5>Home</h5></Link>
             </li>
             <li class="nav-item">
-            <Link class="nav-link" to='/About'> About </Link>
+            <Link class="nav-link" to='/aboutpage'> <h5>About</h5> </Link>
              </li>
             <li class="nav-item">
-             <Link class="nav-link" to='/Contact'> Contact </Link>
+             <Link class="nav-link" to='/contactpage'> <h5>Contact</h5></Link>
              </li>
             </ul>
             <h2><span class="badge bg-primary"> S217487971, Sizwe Sibanyoni</span></h2>
